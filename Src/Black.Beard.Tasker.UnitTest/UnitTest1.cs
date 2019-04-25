@@ -130,18 +130,16 @@ namespace Bb.Taskers.UnitTest
             var node21 = nodes.Create("task2-1", ctx =>
             {
                 Assert.AreEqual(t1, true);
-                Thread.Sleep(200);
+                Thread.Sleep(500);
                 t21 = true;
                 Assert.AreEqual(t22, true);
-                return false;
+                return true;
             });
 
             var node22 = nodes.Create("task2-2", ctx =>
             {
-                Assert.AreEqual(t1, true);
-                Assert.AreEqual(t21, false);
-                Thread.Sleep(20);
                 t22 = true;
+                Assert.AreEqual(t1, true);
                 return result;
             });
 

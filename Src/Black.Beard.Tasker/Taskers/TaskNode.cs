@@ -25,7 +25,7 @@ namespace Bb.Taskers
 
         public bool IsLaunched { get; private set; }
 
-        public TaskNode<T> ContinueWith(string taskName, bool stopIfFailed = false)
+        public TaskNode<T> ContinueWith(string taskName, bool stopIfFailed = true)
         {
             TaskNode<T> node = Parent.Get(taskName) ?? throw new Exception($"task node {taskName} can't be resolved");
             return ContinueWith(node, stopIfFailed);
@@ -37,7 +37,7 @@ namespace Bb.Taskers
         /// <param name="node">The node.</param>
         /// <param name="stopIfFailed">if set to <c>true</c> [stop if the current node is failed].</param>
         /// <returns></returns>
-        public TaskNode<T> ContinueWith(TaskNode<T> node, bool stopIfFailed = false)
+        public TaskNode<T> ContinueWith(TaskNode<T> node, bool stopIfFailed = true)
         {
             node._guards.Add(new Guard(this, stopIfFailed));
             return node;
