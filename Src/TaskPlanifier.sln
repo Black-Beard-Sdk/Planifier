@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Black.Beard.Tasker", "Black.Beard.Tasker\Black.Beard.Tasker.csproj", "{DFBE8612-1270-4578-B1BB-1AB67A303D48}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Black.Beard.Taskers.UnitTest", "Black.Beard.Tasker.UnitTest\Black.Beard.Taskers.UnitTest.csproj", "{7AB29245-0A17-4769-8D1F-D8C99D00EFBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFBE8612-1270-4578-B1BB-1AB67A303D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBE8612-1270-4578-B1BB-1AB67A303D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBE8612-1270-4578-B1BB-1AB67A303D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBE8612-1270-4578-B1BB-1AB67A303D48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB29245-0A17-4769-8D1F-D8C99D00EFBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB29245-0A17-4769-8D1F-D8C99D00EFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB29245-0A17-4769-8D1F-D8C99D00EFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB29245-0A17-4769-8D1F-D8C99D00EFBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C02A9022-147B-4D1E-BC78-E1D739ABC9BD}
+	EndGlobalSection
+EndGlobal
